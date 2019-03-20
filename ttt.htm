@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Giới thiệu</title>
+    <script type="text/javascript" src="js/button.js" async></script>
+
+   <!-- Bootstrap Style -->
+   <link rel="stylesheet" type="text/css"
+   href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>     -->
+<!-- Custom Style-->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <button type="button" onclick="myFunction()">test</button>
+<div>
+    <button id="btnOne">1</button>
+    <button id="btnTwo">2</button>
+    <button id="btnThree">3</button>
+
+</div>
+<div class="col-md-6">
+    <div class="" id="tabOne">1</div>
+    <div class="" id="tabTwo">2</div>
+    <div class="" id="tabThree">3</div>
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+        $('#btnOne').click(function () {
+            $('#tabOne').show();
+            $('#tabTwo').hide();
+            $('#tabThree').hide();
+        });
+    $('#btnTwo').click(function () {
+        $('#tabOne').hide();
+        $('#tabTwo').show();
+        $('#tabThree').hide();
+    });
+    $('#btnThree').click(function () {
+        $('#tabOne').hide();
+        $('#tabTwo').hide();
+        $('#tabThree').show();
+    });
+
+    });
+</script>
+</html>

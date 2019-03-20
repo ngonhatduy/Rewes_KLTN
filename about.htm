@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Giới thiệu</title>
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="languages">
+            <a href="/"><b>Tiếng Việt</b></a>&nbsp;
+            <a href="/en">English</a>
+        </div>
+
+        <div class="logos">
+            <div class="pull-left">
+				<a href = "index.htm">
+					<img src="logo/logoDuAn.png" />
+				</a>
+            </div>
+            <div class="pull-right">
+				<a href = "http://vlhn-hcmus.com" target="_blank">
+					<img src="logo/logoKhoa.png" />
+				</a>
+				<a href = "https://www.hcmus.edu.vn" target="_blank">
+					<img src="logo/logoTruong.png" />
+				</a>
+            </div>
+        </div>
+
+        <div class="title">
+            <h1>DỰ ÁN QUAN TRẮC MÔI TRƯỜNG THEO THỜI GIAN THỰC</h1>
+            <h2>Bộ môn Vật lý Hạt nhân, Trường Đại học Khoa học Tự nhiên - ĐHQG TP.HCM</h2>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.htm">Trang chủ</a></li>
+                <li><a href="information.htm">Thông tin</a></li>
+                <li><a href="about.htm">Giới thiệu</a></li>
+                <li><a href="contact.htm">Liên hệ</a></li>
+                <li><a href="history.htm">Quá trình phát triển</a></li>
+                <li><a href="device-images.htm">Một số hình ảnh</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid body">
+        <div class="row">
+            <div class="col-md-12">
+                
+
+<p>
+    <b>DỰ ÁN CỘNG ĐỒNG “QUAN TRẮC MÔI TRƯỜNG THEO THỜI GIAN THỰC WEBSITE TRỰC TUYẾN”</b><br />
+    <b>Dự án: ReWES </b>project for Community.<br />
+    - English: “<b>Re</b>al-time <b>W</b>ebsite <b>E</b>nvironmental monitoring <b>S</b>ystem” Project for Community.<br />
+    - Tên tiếng Việt: Dự án cộng đồng “Quan trắc môi trường theo thời gian thực website trực tuyến”.<br />
+
+</p>
+
+<h2>Giới thiệu</h2>
+<p>
+    Dự án “Quan trắc môi trường thời gian thực Website trực tuyến” thực hiện quan trắc các thông số về môi trường (bao gồm phóng xạ, các thông số môi trường lý, hóa) theo thời gian thực. Số liệu đo sẽ tự động cập nhập một cách liên tục theo thời gian thực và hiển thị lên Webpage.<br />
+    Các đường truyền dữ liệu được phát triển trong dự án bao gồm:<br />
+    (1) Đường truyền tại trạm đo (USB, WIFI);<br />
+    (2) Đường truyền nội bộ (hệ thống mạng nội bộ - LAN); <br />
+    (3) Đường truyền mạng internet (mạng WAN), cũng như lưu trữ dữ liệu trong database. <br />
+    Hình 1.1 trình bày mô hình tổng quan về dự án về quan trắc môi trường. Trạm đo (Measurement site) thực hiện ghi nhận dữ liệu từ các cảm biến môi trường (như phóng xạ, các thành phần lý hóa, v.v.). Các cảm biến được kết nối với bộ giao tiếp điện tử DAQ với công nghệ nhúng FPGA (Field Programable Gate Array) tích hợp. Dữ liệu đo sẽ được xử lý trong FPGA để ghi nhận các thông tin từ cảm biến theo thời gian thực và có thể truyền dữ liệu qua đường truyền USB, WIFI, mạng nội bộ LAN (Local Site) và mạng WAN (Global site). Đối với dữ liệu truyền qua mạng internet (mạng WAN), hệ thống Webserver được phát triển cho phép ghi nhận dữ liệu đo tại trạm đo theo thời gian thực. Giao thức truyền dữ liệu ra internet thông qua đường truyền theo địa chỉ IP ngoài (External IP) cũng như thông qua đường truyền 3G. Để thông tin dữ liệu đo trực tuyến trên mạng internet, một Website được xây dựng cho phép hiển thị kết quả đo theo thời gian thực. Bên cạnh đó, thông tin về vị trí nơi đo cũng được định vị và hiển thị dưới dạng Google Map. <br />
+    Dự án quan trắc môi trường trực tuyến nhằm mục đích thông tin cho con người biết về mức độ an toàn/ô nhiễm về môi trường ở nơi khảo sát và có thể truyền tải đến người quan tâm thông qua Website. Dự án này được phát triển bởi nhóm nghiên cứu của tiến sĩ Võ Hồng Hải, trường đại học Khoa học Tự nhiên, ĐHQG-TPHCM.
+</p>
+<div style="text-align: center">
+    <img src="pics/system.png" style="max-width: 100%">
+</div>
+<p>
+    <b>Hình 1.1</b> Dự án cộng đồng “Quan trắc môi trường thời gian thực Website trực tuyến”. Thực hiện bởi nhóm nghiên cứu của TS. Võ Hồng Hải, Đại học Khoa Tự nhiên – ĐHQG-TPHCM.
+</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>
+            Copyright@2017 ReWES project <br />
+            Designed and powered by: ReWES project
+        </span>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>

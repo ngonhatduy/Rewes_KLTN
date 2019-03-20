@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+	<meta http-equiv="refresh" content="10">
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <script type="text/javascript" src="js/button.js" async></script>	   -->
+    <style>
+
+
+    </style>
+    <title>Trang chủ</title>
+ 
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>     -->
+    <!-- Custom Style-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="languages">
+            <a href="/"><b>Tiếng Việt</b></a>&nbsp;
+            <a href="/en">English</a>
+        </div>
+
+        <div class="logos">
+            <div class="pull-left">
+                <a href="index.htm">
+                    <img src="logo/logoDuAn.png" />
+                </a>
+            </div>
+            <div class="pull-right">
+                <a href="http://vlhn-hcmus.com" target="_blank">
+                    <img src="logo/logoKhoa.png" />
+                </a>
+                <a href="https://www.hcmus.edu.vn" target="_blank">
+                    <img src="logo/logoTruong.png" />
+                </a>
+            </div>
+        </div>
+
+        <div class="title">
+            <h1>DỰ ÁN QUAN TRẮC MÔI TRƯỜNG THEO THỜI GIAN THỰC</h1>
+            <h2>Bộ môn Vật lý Hạt nhân, Trường Đại học Khoa học Tự nhiên - ĐHQG TP.HCM</h2>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.htm">Trang chủ</a></li>
+                <li><a href="information.htm">Thông tin</a></li>
+                <li><a href="about.htm">Giới thiệu</a></li>
+                <li><a href="contact.htm">Liên hệ</a></li>
+                <li><a href="history.htm">Quá trình phát triển</a></li>
+                <li><a href="device-images.htm">Một số hình ảnh</a></li>
+                <li></li>
+            </ul>
+            <!-- <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+            
+            </form> -->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid body">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="row">
+                    <div class="col-md-8">
+
+                        <div class="btn-group-vertical">
+                            <button onclick="setTimer(this.id)" id="btnDose" class="btn btn-primary">Phóng xạ</button>
+                            <button onclick="setTimer(this.id)" id="btnTemperature" class="btn btn-primary">Nhiệt
+                                độ</button>
+                            <button onclick="setTimer(this.id)" id="btnHumid" class="btn btn-primary">Độ ẩm</button>
+                            <button onclick="setTimer(this.id)" id="btnSensor1" class="btn btn-primary">Khí CO</button>
+                            <button onclick="setTimer(this.id)" id="btnSensor2" class="btn btn-primary">Khí CH4</button>
+                            <button onclick="setTimer(this.id)" id="btnSensor3" class="btn btn-primary">Sensor
+                                3</button>
+
+                        </div>
+
+
+
+                    </div>
+                    <div id="container">
+                        <div id="chart"></div>
+                    </div>
+                    <div id="container">
+                        <div id="map"></div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>
+            Copyright@2017 ReWES project <br />
+            Designed and powered by: ReWES project
+        </span>
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-EsWrucJG3ppzgSuimyhzjKZho-1MTdA"></script>
+
+
+
+    <script>
+
+    </script>
+
+
+    <script type="text/javascript" src="js/lang.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+</body>
+
+</html>

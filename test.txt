@@ -1,0 +1,63 @@
+// function setTimer(){
+	// myVar = setInterval(myTimer, 500);
+// } 
+
+function myTimer() {
+	$(document).ready(function() {
+		
+		$.getJSON('http://nguyen-nulab.ddns.net:8001/web/updatert/', function(data) {
+			//var a = data.dose;
+			//var n = parseFloat(a);
+			//x = Math.round(a * 10)/10;
+			// var a =document.getElementById("btnDose").value;
+			// a.toString;
+			//document.write(a.constructor);
+			 document.getElementById("temp").innerHTML = data.dose;
+			//document.getElementById("temp").style.fontSize = "xx-large";
+			
+	});
+	});
+	myVar = setInterval(myTimer, 500);
+	}
+
+// function reply_click(clicked_id)
+// {
+    // alert(clicked_id);
+
+
+
+
+// function dehighlightAllButtons() {
+    // getRegisteredButtons().forEach(function (element) {
+        // element.button.css({
+            // "background-color": "whitesmoke",
+            // "color": "#01458E"
+        // });
+    // });
+// }
+
+// function highlightButton(button) {
+    // button.css({
+        // "background-color": "#01458E",
+        // "color": "white"
+    // });
+// }
+
+// function onButtonClick(event) {
+    // dehighlightAllButtons();
+    // highlightButton(event.data.source);
+	 // document.write('HIHI');
+// }
+
+// $(document).ready(function () {
+    // // set action for buttons in .cshtml
+    // getRegisteredButtons().forEach(function (element) {
+        // element.button.click(
+            // {
+				// document.write("jjj");
+                // source: element.button,
+            // },
+            // onButtonClick
+        // );
+    // });
+// });
